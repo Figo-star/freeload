@@ -1,0 +1,13 @@
+{
+  "name": "freeload",
+  "version": "0.1.0",
+  "description": "Route every AI subtask to a free model. Code for $0.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "freeload": "./bin/freeload.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

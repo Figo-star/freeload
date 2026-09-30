@@ -1,0 +1,48 @@
+{
+  "$schema": "https://freeload.dev/freeload.json",
+  "version": 1,
+  "updated": "2026-09-30",
+  "note": "All models below were verified live against provider catalogs on 2026-09-30. Free tiers change often — run `freeload doctor` to re-verify.",
+  "classes": {
+    "plan": {
+      "description": "Architecture, reasoning, debugging strategy — hardest tasks go to the biggest free models first",
+      "chain": [
+        "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+        "openrouter/thinkingmachines/inkling:free",
+        "openrouter/qwen/qwen3.8-27b:free",
+        "opencode/big-pickle"
+      ]
+    },
+    "code": {
+      "description": "Implementation, refactors, test writing",
+      "chain": [
+        "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
+        "openrouter/qwen/qwen3.8-27b:free",
+        "openrouter/cohere/north-mini-code:free",
+        "openrouter/google/gemma-4-31b-it:free",
+        "opencode/big-pickle"
+      ]
+    },
+    "edit": {
+      "description": "Small fast edits, renames, single-file fixes",
+      "chain": [
+        "openrouter/nvidia/nemotron-3.5-lightning:free",
+        "openrouter/google/gemma-4-26b-a4b-it:free",
+        "openrouter/liquid/lfm-2.5-2.6b:free",
+        "pollinations/openai-fast"
+      ]
+    },
+    "chat": {
+      "description": "Titles, summaries, Q&A, trivial calls — cheapest first",
+      "chain": [
+        "pollinations/openai-fast",
+        "opencode/big-pickle",
+        "openrouter/liquid/lfm-2.5-2.6b:free"
+      ]
+    }
+  },
+  "fallback": {
+    "on": ["429", "quota", "rate-limit", "insufficient", "function calling not support", "No endpoints found that support tool use"],
+    "strategy": "Advance to the next model in the class chain. Never retry the same model twice for the same error. If a chain is exhausted, drop one class level (plan->code->edit->chat) and continue. Only escalate to a paid model when the user explicitly allows it."
+  }
+}
