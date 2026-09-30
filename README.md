@@ -1,6 +1,15 @@
 # freeload — code with AI for $0
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/lastknownstar-bot/freeload?style=social)](https://github.com/lastknownstar-bot/freeload/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/lastknownstar-bot/freeload)](https://github.com/lastknownstar-bot/freeload/commits/master)
+[![Free models](https://img.shields.io/badge/models-16%20free-brightgreen)](freeload.json)
+
 **Route every subtask to a free model. Never spend a dollar unless you say so.**
+
+> **Works with:** OpenCode · Claude Code · Codex · Cursor — any agent that loads `SKILL.md`.
+> **Costs:** $0 — OpenRouter `:free` models · Pollinations (no key) · OpenCode Zen free · Gemini free tier · local Ollama.
+> **Deps:** none — one JSON file, one dependency-free Node script.
 
 Coding agents burn money because they use one expensive model for everything — including writing session titles. freeload fixes that with a simple idea: classify each subtask (`plan` / `code` / `edit` / `chat`), send it to the strongest **free** model that can handle it, and auto-failover to the next free model on quota errors.
 
