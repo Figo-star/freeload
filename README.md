@@ -1,5 +1,7 @@
 # freeload — code with AI for $0
 
+![freeload — route every subtask to a free model](assets/cover.png)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/lastknownstar-bot/freeload?style=social)](https://github.com/lastknownstar-bot/freeload/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/lastknownstar-bot/freeload)](https://github.com/lastknownstar-bot/freeload/commits/master)
