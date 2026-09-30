@@ -3,8 +3,8 @@
 ![freeload — route every subtask to a free model](assets/cover.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/lastknownstar-bot/freeload?style=social)](https://github.com/lastknownstar-bot/freeload/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/lastknownstar-bot/freeload)](https://github.com/lastknownstar-bot/freeload/commits/master)
+[![GitHub stars](https://img.shields.io/github/stars/Figo-star/freeload?style=social)](https://github.com/Figo-star/freeload/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Figo-star/freeload)](https://github.com/Figo-star/freeload/commits/master)
 [![Free models](https://img.shields.io/badge/models-16%20free-brightgreen)](freeload.json)
 
 **Route every subtask to a free model. Never spend a dollar unless you say so.**
@@ -27,7 +27,7 @@ agent: title → pollinations gpt-oss (free)       $0.00
 ## Install (30 seconds)
 
 ```bash
-git clone https://github.com/lastknownstar-bot/freeload.git
+git clone https://github.com/Figo-star/freeload.git
 cd freeload && ./install.sh   # or install.ps1 on Windows
 ```
 
