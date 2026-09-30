@@ -16,7 +16,7 @@ agent: title → pollinations gpt-oss (free)       $0.00
 ## Install (30 seconds)
 
 ```bash
-git clone https://github.com/<you>/freeload.git
+git clone https://github.com/lastknownstar-bot/freeload.git
 cd freeload && ./install.sh   # or install.ps1 on Windows
 ```
 
